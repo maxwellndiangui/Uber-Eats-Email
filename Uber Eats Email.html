@@ -9,6 +9,38 @@
     <link rel="icon" type="image/x-icon" href="img/small uber logo.png"> <!-- Adds favicon image to webpage -->
         
     <title>Uber Eats Email</title>
+
+    <style>
+        /* Mobile (if smaller than 480px then run code)*/
+      @media only screen and (max-width:600px){
+        .container{
+          width: 100% !important;
+        }
+        .uber-logo{
+            padding-right: 100px;
+            width:100%
+        }
+        .starbucks-logo-img{
+            padding-right: 100px;
+            width: 50%;
+        }
+        .coffee-photo{
+            margin-right: 100px;
+            width: 50%;
+        }
+        .happy-text{
+            width: 80%;
+            font-size: 42px !important;
+            padding-bottom: 20px !important;
+        }
+        .savings-post{
+            width: 70%;
+        }
+        .ad-logo{
+            width: 50%;
+        }
+      }
+    </style>
     
     </head>
 
@@ -25,7 +57,7 @@
                                     <table class="uber-eats-logo" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                         <tr>
                                             <td align="center">
-                                                <a href="https://www.ubereats.com/ca"><img src="img/big logo.png" alt="" style="width: 150px;"></a>
+                                                <a href="https://www.ubereats.com/ca"><img class="uber-logo" src="img/big logo.png" alt="" style="width: 150px;"></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -37,7 +69,7 @@
                                                 <table class="starbucks-logo" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td align="center">
-                                                            <img src="img/starbucks logo.png" alt="" width="600px">
+                                                            <img class="starbucks-logo-img" src="img/starbucks logo.png" alt="" width="600px">
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -49,10 +81,10 @@
                                     <table class="coffee-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="coffee-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
+                                                <table class="coffee-logo" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td align="center">
-                                                            <img src="img/coffee.png" alt="" width="600px" style="padding: 0 0 10px 0;">
+                                                            <img class="coffee-photo" src="img/coffee.png" alt="" width="600px" style="padding: 0 0 10px 0;">
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -67,7 +99,7 @@
                                                 <table class="happy-hour-text" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'HelveticaNeue', Helvetica, Arial, sans-serif;">
-                                                            <h1 style="font-size:55px;font-weight:545;padding: 0 0px 0 60px">That's why they call <br>it Happy Hour</h1>
+                                                            <h1 class="happy-text" style="font-size:55px;font-weight:545;padding: 0 0px 0 60px">That's why they call <br>it Happy Hour</h1>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -82,7 +114,7 @@
                                                 <table class="savings-text" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif;">
-                                                            <p style="font-size:19px;font-weight:400;padding: 0px 30px 5px 60px; margin-top:-15px;line-height:26px;color:black">Say yup to a little mid-week pick-me-up. From <code>6/3</code> until <code>6/28</code>, get 30% off $20+ Starbucks® orders every weekday from 2-5pm.</p>
+                                                            <p class="savings-post" style="font-size:19px;font-weight:400;padding: 0px 30px 5px 60px; margin-top:-15px;line-height:26px;color:black">Say yup to a little mid-week pick-me-up. From <code>6/3</code> until <code>6/28</code>, get 30% off $20+ Starbucks® orders every weekday from 2-5pm.</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -122,13 +154,13 @@
                                                 </table>
                                                 <table class="extra-text-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;padding-bottom:50px" role="presentation">
                                                     <tr>
-                                                        <td style="font-family:'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif;padding: 0px 10px 35px 60px">
-                                                            <p style="max-width: 295px;margin-top:-0.1px;font-size:15px;line-height:22px">
+                                                        <td style="font-family:'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif;padding: 0px 0px 35px 60px">
+                                                            <p style="max-width: 290px;margin-top:-0.1px;font-size:15px;line-height:22px">
                                                                 Want to save extra on rides and meals? Sign up for Uber One and enjoy perks like $0 Delivery Fee, up to 5% off eligible Uber Eats orders, member pricing on rides, and much more.
                                                             </p>
                                                         </td>
                                                         <td style="padding: 10px 60px 0px 0">
-                                                            <a href="https://www.uber.com/ca/en/u/uber-one/?partner=crm&referrer=singular_click_id%3D0e38c7c3-e347-4190-b522-3d262e2b2af9&sl_id=yjvm&u_action_id=718a0b2e-f695-4d5e-aabf-b7b7a8c2257a&utm_content=081412b0-b9c6-3681-8600-8bccdd00debf&~customer_keyword=081412b0-b9c6-3681-8600-8bccdd00debf"><img style="width: 180px;height: 200px;margin-top:-70px;margin-right:-20px" src="img/uber-eats-advert.png" alt=""></a>
+                                                            <a href="https://www.uber.com/ca/en/u/uber-one/?partner=crm&referrer=singular_click_id%3D0e38c7c3-e347-4190-b522-3d262e2b2af9&sl_id=yjvm&u_action_id=718a0b2e-f695-4d5e-aabf-b7b7a8c2257a&utm_content=081412b0-b9c6-3681-8600-8bccdd00debf&~customer_keyword=081412b0-b9c6-3681-8600-8bccdd00debf"><img class="ad-logo" style="width: 180px;height: 200px;margin-top:-70px;margin-right:-20px" src="img/uber-eats-advert.png" alt=""></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -153,7 +185,7 @@
                                                 <table class="promo-text" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'HelveticaNeue', Arial, sans-serif;">
-                                                            <p style="font-size:12px;font-weight:200;padding: 0px 0px 45px 60px;line-height:16px;color:black;max-width:500px;margin-top:-95px">Promo expires on June 28, 2024. Weekdays only between 2-5 pm local time. Promo valid for 30% off orders of $20 or more (before taxes and fees). Valid only on orders placed on Uber Eats. Taxes and fees still apply. Prices for Starbucks® items purchased through Uber Eats may be higher than as marked or posted in stores. Offer may not be combined with other offers or discounts (except for applicable Uber One member benefits). Does not apply to pick up or dine-in orders. Fees subject to change. Menu limited. Restricted delivery area. Offer available at participating locations only. Terms are subject to change. Other exclusions may apply (e.g., alcohol orders). See app for details.</p>
+                                                            <p style="font-size:12px;font-weight:200;padding: 0px 0px 45px 60px;line-height:16px;color:black;max-width:490px;margin-top:-95px">Promo expires on June 28, 2024. Weekdays only between 2-5 pm local time. Promo valid for 30% off orders of $20 or more (before taxes and fees). Valid only on orders placed on Uber Eats. Taxes and fees still apply. Prices for Starbucks® items purchased through Uber Eats may be higher than as marked or posted in stores. Offer may not be combined with other offers or discounts (except for applicable Uber One member benefits). Does not apply to pick up or dine-in orders. Fees subject to change. Menu limited. Restricted delivery area. Offer available at participating locations only. Terms are subject to change. Other exclusions may apply (e.g., alcohol orders). See app for details.</p>
                                                         </td>
                                                     </tr>
                                                 </table>
