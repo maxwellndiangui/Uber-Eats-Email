@@ -17,8 +17,8 @@ Email was tested using Litmus in all major email clients including:
 
 ## Live Demo
 
-PASTE LINK HERE
-
+https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/
+ 
 ## Authors
 
 **Maxwell Ndiangui** - Entire program
