@@ -1,6 +1,6 @@
 # Introduction to Uber Eats Email
 
-[![](PASTE LINK HERE)
+[![](https://github.com/maxwellndiangui/Uber-Eats-Email/blob/main/img/uber-eats-advert.png)](https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/)
 
 ## Description
 
@@ -17,8 +17,8 @@ Email was tested using Litmus in all major email clients including:
 
 ## Live Demo
 
-PASTE LINK HERE
-
+https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/
+ 
 ## Authors
 
 **Maxwell Ndiangui** - Entire program
