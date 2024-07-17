@@ -1,6 +1,8 @@
 # Introduction to Uber Eats Email
 
+<div align="center">
 [![](https://github.com/maxwellndiangui/Uber-Eats-Email/blob/main/img/Uber-Eats-Campaign.png)](https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/)
+</div>
 
 ## Description
 
