@@ -1,24 +1,24 @@
 # Introduction to Uber Eats Email
 
-[![](https://github.com/maxwellndiangui/Uber-Eats-Email/blob/main/img/Uber-Eats-Campaign.png)](https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/)
+ [![](https://github.com/maxwellndiangui/Uber-Eats-Email/blob/main/img/Uber-Eats-Campaign.png)](https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/)
 
 ## Description
 
-A responsive promotional email for "Uber Eats" built using HTML and CSS.
+ A responsive promotional email for "Uber Eats" built using HTML and CSS.
 
 ## Compatibility
 
-Email was tested using Litmus in all major email clients including:
+ Email was tested using Litmus in all major email clients including:
 
-* Gmail
-* Outlook 
-* Apple 
-* Google Android
+ * Gmail
+ * Outlook 
+ * Apple 
+ * Google Android
 
 ## Live Demo
 
-https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/
+ https://maxwellndiangui.github.io/Uber-Eats-Email.github.io/
  
 ## Authors
 
-**Maxwell Ndiangui** - Entire program
+ **Maxwell Ndiangui** - Entire program
