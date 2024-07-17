@@ -11,10 +11,35 @@
     <title>Uber Eats Email</title>
 
     <style>
-        /* Mobile (if smaller than 480px then run code)*/
-      @media only screen and (max-width:600px){
+      /* Outlook specific reset styles (extra fixes to make email render properly) */
+      body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+      table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+      img { -ms-interpolation-mode: bicubic; }
+
+      /* Fixes addresses turning into links for Apple Devices */
+      #id1 #id2 a[x-apple-data-detectors]{
+        color: inherit !important;
+        text-decoration: inherit !important;
+    }
+
+        /* Desktop */
+    @media only screen and (max-width:960){
         .container{
-          width: 100% !important;
+            width: 100%;
+        }
+    }
+
+      /* midsize */
+    @media only screen and (max-width: 960px) {
+        .container{
+            width: 600px;
+        }
+    }
+
+        /* Mobile */
+    @media only screen and (max-width:600px){
+        .container{
+          width: 480px !important;
         }
         .uber-logo{
             padding-right: 100px;
@@ -56,7 +81,7 @@
         .ig-logo{
             margin-left: -25px;
         }
-      }
+    }
     </style>
     
     </head>
@@ -67,7 +92,7 @@
             <tr>
                 <td align="center" valign="top">
                     <!--Start Container-->
-                        <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                        <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                             <tr>
                                 <td>
                                     <!--Start of Uber Eats Logo Row-->
@@ -80,10 +105,10 @@
                                     </table>
                                     <!--End of Uber Eats Logo Row-->
                                     <!--Start of Starbucks Logo Row-->
-                                    <table class="starbucks-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                    <table class="starbucks-row" width="600px" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="starbucks-logo" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
+                                                <table class="starbucks-logo" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td align="center">
                                                             <img class="starbucks-logo-img" src="https://i.ibb.co/f48rpp3/starbucks-logo.png" alt="" width="600px">
@@ -95,10 +120,10 @@
                                     </table>
                                     <!--End of Starbucks Logo Row-->
                                     <!--Start of Coffee Row-->
-                                    <table class="coffee-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                    <table class="coffee-row" width="600px" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="coffee-logo" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
+                                                <table class="coffee-logo" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td align="center">
                                                             <img class="coffee-photo" src="https://i.ibb.co/KNXMDL9/coffee.png" alt="" width="600px" style="padding: 0 0 10px 0;">
@@ -113,7 +138,7 @@
                                     <table class="happy-hour-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="happy-hour-text" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
+                                                <table class="happy-hour-text" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'HelveticaNeue', Helvetica, Arial, sans-serif;">
                                                             <h1 class="happy-text" style="font-size:55px;font-weight:545;padding: 0 0px 0 60px">That's why they call <br>it Happy Hour</h1>
@@ -128,7 +153,7 @@
                                     <table class="savings-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="savings-text" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
+                                                <table class="savings-text" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif;">
                                                             <p class="savings-post" style="font-size:19px;font-weight:400;padding: 0px 30px 5px 60px; margin-top:-15px;line-height:26px;color:black">Say yup to a little mid-week pick-me-up. From <code>6/3</code> until <code>6/28</code>, get 30% off $20+ Starbucks® orders every weekday from 2-5pm.</p>
@@ -143,7 +168,7 @@
                                     <table class="order-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="order-btn" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
+                                                <table class="order-btn" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #eaf6ed;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif; padding-bottom:60px;font-weight:700;font-size:16px;line-height:22px;padding-left:60px">
                                                             <a href="https://www.ubereats.com/ca" style="background-color:black;border-color:black;color:white;border-radius:0px;border-style:solid;border-width:13px 18px;display:inline-block;letter-spacing:1px;max-width:300px;min-width:100px;text-align:center;text-decoration:none">
@@ -162,17 +187,17 @@
                                     <table class="text/photo-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="small-logo" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                                <table class="small-logo" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="padding:0px 0 0 60px">
-                                                           <img style="width: 35px;margin-top:40px" src="https://i.ibb.co/v1nyzgM/small-uber-logo.png" alt="">
+                                                           <img style="width: 35px;padding-top:40px" src="https://i.ibb.co/v1nyzgM/small-uber-logo.png" alt="">
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                <table class="extra-text-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;padding-bottom:50px" role="presentation">
+                                                <table class="extra-text-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;padding-bottom:50px" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif;padding: 0px 0px 35px 60px">
-                                                            <p style="max-width: 290px;margin-top:-0.1px;font-size:15px;line-height:22px">
+                                                            <p style="max-width: 290px;padding-top:0px;font-size:15px;line-height:22px">
                                                                 Want to save extra on rides and meals? Sign up for Uber One and enjoy perks like $0 Delivery Fee, up to 5% off eligible Uber Eats orders, member pricing on rides, and much more.
                                                             </p>
                                                         </td>
@@ -181,7 +206,7 @@
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                <table class="signup-btn" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                                <table class="signup-btn" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif; padding-bottom:60px;font-weight:650;font-size:16px;line-height:20px;padding-left:60px">
                                                             <a href="https://www.uber.com/ca/en/u/uber-one/?partner=crm&referrer=singular_click_id%3D0e38c7c3-e347-4190-b522-3d262e2b2af9&sl_id=yjvm&u_action_id=718a0b2e-f695-4d5e-aabf-b7b7a8c2257a&utm_content=081412b0-b9c6-3681-8600-8bccdd00debf&~customer_keyword=081412b0-b9c6-3681-8600-8bccdd00debf" style="color:black;display:inline-block;max-width:300px;min-width:100px;text-align:center;text-decoration:none">
@@ -199,7 +224,7 @@
                                     <table class="promo-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="promo-text" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                                <table class="promo-text" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:'HelveticaNeue', Arial, sans-serif;">
                                                             <p class="promo-para" style="font-size:12px;font-weight:200;padding: 0px 0px 45px 60px;line-height:16px;color:black;max-width:490px;margin-top:-95px">Promo expires on June 28, 2024. Weekdays only between 2-5 pm local time. Promo valid for 30% off orders of $20 or more (before taxes and fees). Valid only on orders placed on Uber Eats. Taxes and fees still apply. Prices for Starbucks® items purchased through Uber Eats may be higher than as marked or posted in stores. Offer may not be combined with other offers or discounts (except for applicable Uber One member benefits). Does not apply to pick up or dine-in orders. Fees subject to change. Menu limited. Restricted delivery area. Offer available at participating locations only. Terms are subject to change. Other exclusions may apply (e.g., alcohol orders). See app for details.</p>
@@ -225,15 +250,17 @@
                                     </table>
                                     <!--End of Uber Eats Logo 2 Row-->
                                     <!--Start of Links Row-->
-                                    <table class="links-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
-                                        <tr>
-                                            <td style="font-family:'HelveticaNeue', Helvetica, Arial, sans-serif;font-size:12px;line-height:22px;padding:40px 0px 0 60px;direction:ltr;text-align:left">
-                                                <a style="text-decoration:none;color:black" href="https://help.uber.com/ubereats/restaurants">Help Center</a>
-                                            </td>
-                                            <td style="font-family:'HelveticaNeue', Helvetica, Arial, sans-serif;font-size:12px;line-height:22px;padding:40px 150px 0 0px;direction:ltr;text-align:left">
-                                                <a style="text-decoration:none;color:black" href="https://www.uber.com/legal/en/document/?name=privacy-notice&country=canada&lang=en">Privacy</a>
-                                            </td>
-                                        </tr>
+                                    <table class="links-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                        <table class="links-row1" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                            <tr>
+                                                <td style="font-family:'HelveticaNeue', Helvetica, Arial, sans-serif;font-size:12px;line-height:22px;padding:40px 0px 0 60px;direction:ltr;text-align:left">
+                                                    <a style="text-decoration:none;color:black" href="https://help.uber.com/ubereats/restaurants">Help Center</a>
+                                                </td>
+                                                <td style="font-family:'HelveticaNeue', Helvetica, Arial, sans-serif;font-size:12px;line-height:22px;padding:40px 150px 0 0px;direction:ltr;text-align:left">
+                                                    <a style="text-decoration:none;color:black" href="https://www.uber.com/legal/en/document/?name=privacy-notice&country=canada&lang=en">Privacy</a>
+                                                </td>
+                                            </tr>
+                                        </table>
                                         <table class="links-row2" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                             <tr>
                                                 <td style="font-family:'HelveticaNeue', Helvetica, Arial, sans-serif;font-size:12px;line-height:22px;padding:5px 0px 0 60px;direction:ltr;text-align:left">
@@ -255,7 +282,7 @@
                                     <table class="footer-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                         <tr>
                                             <td>
-                                                <table class="footer-text1" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                                <table class="footer-text1" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:Arial, sans-serif;">
                                                             <p class="foot-text1" style="font-size:10px;padding: 0px 0px 0px 60px;line-height:16px;color:black;max-width:300px">This is a promotional email from Uber Portier Canada Inc.</p>
@@ -271,21 +298,21 @@
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                <table class="footer-text2" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                                <table class="footer-text2" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:Arial, sans-serif;">
                                                             <p class="foot-text2" style="font-size:10px;padding: 0px 0px 0px 60px;line-height:16px;color:black;max-width:300px;margin-top:-5px">121 Bloor Street East Suite #1600,</p>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                <table class="footer-text3" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                                <table class="footer-text3" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:Arial, sans-serif;">
                                                             <p class="foot-text2" style="font-size:10px;padding: 0px 0px 0px 60px;line-height:16px;color:black;max-width:300px;margin-top:-5px">Toronto, ON M4W 3M5</p>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                <table class="footer-text4" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                                <table class="footer-text4" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                                     <tr>
                                                         <td style="font-family:Arial, sans-serif;">
                                                             <a class="foot-link" style="text-decoration:none;color:black" href="https://www.uber.com/ca/en/"><p style="font-size:10px;padding: 0px 0px 0px 60px;line-height:16px;color:black;max-width:300px;margin-top:-5px">Uber.com</p></a>
